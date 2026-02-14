@@ -85,13 +85,13 @@ function playBassNote(freq: number, time: number) {
     musicGainNode.connect(c.destination)
   }
 
-  osc.type = 'triangle'
+  osc.type = 'sine'
   osc.frequency.setValueAtTime(freq, time)
-  gain.gain.setValueAtTime(0.15, time)
-  gain.gain.exponentialRampToValueAtTime(0.001, time + 0.55)
+  gain.gain.setValueAtTime(0.04, time)
+  gain.gain.exponentialRampToValueAtTime(0.001, time + 0.35)
   osc.connect(gain).connect(musicGainNode)
   osc.start(time)
-  osc.stop(time + 0.6)
+  osc.stop(time + 0.4)
 }
 
 function scheduleLoop() {
