@@ -61,13 +61,13 @@ function playMelodyNote(freq: number, time: number) {
 
   if (!musicGainNode) {
     musicGainNode = c.createGain()
-    musicGainNode.gain.setValueAtTime(0.06, c.currentTime)
+    musicGainNode.gain.setValueAtTime(0.25, c.currentTime)
     musicGainNode.connect(c.destination)
   }
 
   osc.type = 'sine'
   osc.frequency.setValueAtTime(freq, time)
-  gain.gain.setValueAtTime(0.08, time)
+  gain.gain.setValueAtTime(0.3, time)
   gain.gain.exponentialRampToValueAtTime(0.001, time + 0.45)
   osc.connect(gain).connect(musicGainNode)
   osc.start(time)
@@ -81,13 +81,13 @@ function playBassNote(freq: number, time: number) {
 
   if (!musicGainNode) {
     musicGainNode = c.createGain()
-    musicGainNode.gain.setValueAtTime(0.06, c.currentTime)
+    musicGainNode.gain.setValueAtTime(0.25, c.currentTime)
     musicGainNode.connect(c.destination)
   }
 
   osc.type = 'triangle'
   osc.frequency.setValueAtTime(freq, time)
-  gain.gain.setValueAtTime(0.04, time)
+  gain.gain.setValueAtTime(0.15, time)
   gain.gain.exponentialRampToValueAtTime(0.001, time + 0.55)
   osc.connect(gain).connect(musicGainNode)
   osc.start(time)
