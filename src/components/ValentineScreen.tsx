@@ -24,8 +24,8 @@ export default function ValentineScreen({ onYes }: { onYes: () => void }) {
       const next = prev + 1
       if (next < NO_MESSAGES.length) {
         setNoPos({
-          x: 8 + Math.random() * 75,
-          y: 15 + Math.random() * 60,
+          x: 15 + Math.random() * 60,
+          y: 20 + Math.random() * 45,
         })
       }
       return next
