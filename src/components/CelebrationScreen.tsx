@@ -53,13 +53,13 @@ export default function CelebrationScreen() {
         <CatLove size={120} className="cat-bounce" />
       </div>
 
-      <h2 className="celebration-subtitle">Happy Valentine's Day, Himalika!</h2>
+      <h2 className="celebration-subtitle">Happy Valentine's Day, babyyy!</h2>
 
       <p className="love-message">
-        Himalika, you make every single day brighter and more beautiful.
+        You make every single day brighter and more beautiful.
         Thank you for being the most amazing person in my life.
         <br /><br />
-        I love you so much! 💕
+        I love you so damn much! 💕
       </p>
 
       {/* Decorative paw prints */}
