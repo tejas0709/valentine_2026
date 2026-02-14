@@ -80,7 +80,7 @@ export default function ValentineScreen({ onYes }: { onYes: () => void }) {
       <span className="reveal-sparkles">✨ 💕 ✨</span>
       <span className="valentine-pot">🍲</span>
 
-      <h1 className="valentine-question">Will you be my Valentine? 💕</h1>
+      <h1 className="valentine-question">Himalika, will you be my Valentine? 💕</h1>
 
       {/* Kawaii cat — changes based on state */}
       <div className="valentine-cat-figure">

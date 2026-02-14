@@ -83,8 +83,8 @@ export default function WelcomeScreen({ onStart }: { onStart: () => void }) {
       <h1 className="welcome-title">Kitty's Love Soup</h1>
 
       <p className="welcome-subtitle">
-        Help kitty collect the right magical ingredients
-        to make a very special love soup! 💕
+        Hey Himalika! Help kitty collect the magical
+        ingredients to make a very special love soup! 💕
       </p>
 
       <button className="start-btn" onClick={handleStart}>
